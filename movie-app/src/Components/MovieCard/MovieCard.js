@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 import Rate from '../Rate';
 
 import './MovieCard.css';
@@ -26,10 +26,9 @@ const MovieCard = ({
         </div>
         <div className="card_right__review">
           <p>{description}</p>
-          <a href="https://www.imdb.com/?ref_=nv_home">Read More</a>
         </div>
         <div className="card_right__button">
-          <a href="https://www.imdb.com/?ref_=nv_home">WATCH TRAILER</a>
+          <Link className='link-txt' to={'/description/${e1.id}'}>WATCH TRAILER</Link>
         </div>
       </div>
     </div>
